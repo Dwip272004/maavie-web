@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useWaitlistModal } from "@/components/waitlist-modal-context";
 
 export function WaitlistModal() {
@@ -62,7 +63,11 @@ export function WaitlistModal() {
         </form>
         <p className="mt-3.5 text-center text-[11.5px] text-[#8a8a8a]">
           We&apos;ll use your email to tell you about launch and send
-          occasional waitlist updates.
+          occasional waitlist updates. See our{" "}
+          <Link href="/privacy" className="underline hover:text-deep-plum">
+            Privacy Policy
+          </Link>
+          .
         </p>
       </div>
     </div>

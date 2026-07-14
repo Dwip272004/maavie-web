@@ -223,7 +223,11 @@ export function ResultScreen({ scores, answers, profile, onSubmitted }: ResultSc
           Join the Waitlist
         </button>
         <div className="mt-3.5 text-[11px] leading-[1.5] text-bone/55">
-          We&apos;ll only use your email for your guide and launch updates.
+          We&apos;ll only use your email for your guide and launch updates. See our{" "}
+          <Link href="/privacy" className="underline hover:text-bone" target="_blank">
+            Privacy Policy
+          </Link>
+          .
         </div>
       </form>
       <Link

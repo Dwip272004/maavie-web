@@ -43,6 +43,9 @@ export function Footer() {
             <Link href="#waitlist" className="mb-2 block text-sm hover:text-bone">
               Join the Waitlist
             </Link>
+            <Link href="/privacy" className="mb-2 block text-sm hover:text-bone">
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>
