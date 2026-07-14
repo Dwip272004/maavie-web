@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Maavie brand palette */
+  --color-deep-plum: #3D1A33;
+  --color-plum-accent: #AA3556;
+  --color-bone: #F6F2ED;
+  --color-soft-sage: #A8B5A2;
+  --color-charcoal: #2F3136;
+  --color-terracotta: #C6785C;
+  --color-sage-tint: #EAEEE7;
+  --color-terra-tint: #F5E7E0;
+  --color-plum-tint: #EDE6EB;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-deep-plum: var(--color-deep-plum);
+  --color-plum-accent: var(--color-plum-accent);
+  --color-bone: var(--color-bone);
+  --color-soft-sage: var(--color-soft-sage);
+  --color-charcoal: var(--color-charcoal);
+  --color-terracotta: var(--color-terracotta);
+  --color-sage-tint: var(--color-sage-tint);
+  --color-terra-tint: var(--color-terra-tint);
+  --color-plum-tint: var(--color-plum-tint);
+
+  --font-display: var(--font-playfair-display);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
