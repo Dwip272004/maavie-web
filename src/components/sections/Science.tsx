@@ -1,37 +1,25 @@
 const cards = [
   {
-    icon: "🌿",
-    tint: "bg-plum-tint",
     title: "Skin",
     body: "Falling estrogen means less collagen and a weaker moisture barrier — so skin feels drier, thinner and less firm.",
   },
   {
-    icon: "💇‍♀️",
-    tint: "bg-terra-tint",
     title: "Hair",
     body: "Estrogen keeps hair growing longer. As it drops, more strands shed early — so hair thins gradually, all over.",
   },
   {
-    icon: "🔋",
-    tint: "bg-sage-tint",
     title: "Energy & Fatigue",
     body: "Shifting hormones and blood sugar leave many women drained and foggy — the tiredness that sleep doesn't fix.",
   },
   {
-    icon: "⚖️",
-    tint: "bg-terra-tint",
     title: "Weight & Metabolism",
     body: "Changes in insulin and estrogen make weight easier to gain — especially around the middle — even when nothing else changed.",
   },
   {
-    icon: "😴",
-    tint: "bg-sage-tint",
     title: "Sleep",
     body: "Night waking and lighter sleep are common as hormones fluctuate — which feeds straight into mood and energy.",
   },
   {
-    icon: "🧠",
-    tint: "bg-plum-tint",
     title: "Mood & Brain Fog",
     body: "Mood swings, low patches and that \"where did that word go?\" feeling are real — and hormonal, not a character flaw.",
   },
@@ -39,44 +27,50 @@ const cards = [
 
 export function Science() {
   return (
-    <section id="science" className="bg-bone pb-24">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto mb-[50px] max-w-[740px] text-center">
-          <div className="mb-3.5 text-xs font-bold uppercase tracking-[.18em] text-terracotta">
+    <section id="science" className="bg-bone pb-28">
+      <div className="mx-auto max-w-[880px] px-6">
+        <div className="mb-16 max-w-[560px]">
+          <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">
             The Science
           </div>
-          <h2 className="font-display text-[clamp(28px,3.4vw,44px)] font-semibold text-deep-plum">
-            It&apos;s not just ageing. It&apos;s estrogen.
+          <h2 className="font-display text-[clamp(28px,3.4vw,44px)] font-medium text-deep-plum">
+            It&apos;s not just ageing.
+            <br />
+            It&apos;s estrogen.
           </h2>
-          <p className="mt-3.5 text-lg text-[#575757]">
+          <p className="mt-4 text-lg text-charcoal/60">
             One hormone shifts — and it shows up all over your body.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
-          {cards.map((card) => (
+
+        <div className="border-t border-charcoal/10">
+          {cards.map((card, i) => (
             <div
               key={card.title}
-              className="rounded-[18px] border border-[#ece5dc] bg-white p-6 px-6 transition-[transform,box-shadow] duration-[180ms] hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(61,26,51,0.08)]"
+              className="grid grid-cols-[52px_1fr] gap-x-8 border-b border-charcoal/10 py-8 sm:grid-cols-[88px_1fr]"
             >
-              <div
-                className={`mb-4 flex h-[50px] w-[50px] items-center justify-center rounded-2xl text-[23px] ${card.tint}`}
-              >
-                {card.icon}
+              <div className="font-display text-3xl font-light text-deep-plum/25">
+                {String(i + 1).padStart(2, "0")}
               </div>
-              <h3 className="font-display text-xl font-semibold text-deep-plum">
-                {card.title}
-              </h3>
-              <p className="mt-2 text-[14.5px] text-[#585858]">{card.body}</p>
+              <div>
+                <h3 className="font-display text-xl font-medium text-deep-plum">
+                  {card.title}
+                </h3>
+                <p className="mt-1.5 max-w-md text-[15px] leading-relaxed text-charcoal/65">
+                  {card.body}
+                </p>
+              </div>
             </div>
           ))}
         </div>
-        <div className="mt-[26px] rounded-2xl bg-sage-tint px-7 py-6 text-center text-[15.5px] text-[#3e4a3c]">
-          <strong className="text-deep-plum">One cause, many signals.</strong>{" "}
-          Skin, hair, energy, weight, sleep and mood aren&apos;t separate
-          problems — they&apos;re linked expressions of one hormonal
-          transition. That&apos;s why we treat the whole woman.
-        </div>
-        <div className="mt-6 rounded-md border-l-[3px] border-soft-sage bg-black/3 px-3.5 py-2.5 text-[12.5px] text-[#6b6b6b]">
+
+        <p className="mx-auto mt-16 max-w-[520px] text-center font-display text-2xl font-light italic leading-snug text-deep-plum">
+          &ldquo;One cause, many signals.&rdquo; Skin, hair, energy, weight,
+          sleep and mood aren&apos;t separate problems — they&apos;re linked
+          expressions of one hormonal transition.
+        </p>
+
+        <div className="mx-auto mt-12 max-w-[520px] border-t border-charcoal/10 pt-6 text-center text-[13px] text-charcoal/50">
           Educational, not medical advice. Sudden changes deserve a
           clinician&apos;s eye — iron, thyroid and other factors can play a
           role too.

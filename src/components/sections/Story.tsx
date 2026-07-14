@@ -3,8 +3,11 @@ export function Story() {
     <section id="story" className="bg-bone pb-24 pt-20">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div
-          className="flex aspect-square items-center justify-center rounded-3xl text-[11px] font-bold tracking-[.2em] text-white/80"
-          style={{ background: "linear-gradient(135deg,#A8B5A2,#3D1A33)" }}
+          className="flex aspect-square items-center justify-center border border-charcoal/10 text-[11px] font-semibold tracking-[.2em] text-charcoal/40"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(168,181,162,.18), rgba(61,26,51,.1))",
+          }}
         >
           FOUNDERS PHOTO
         </div>

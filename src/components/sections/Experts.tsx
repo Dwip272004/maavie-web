@@ -7,43 +7,40 @@ const experts = [
 
 export function Experts() {
   return (
-    <section id="experts" className="bg-sage-tint pb-24 pt-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto mb-[46px] max-w-[680px] text-center">
-          <div className="mb-3.5 text-xs font-bold uppercase tracking-[.18em] text-terracotta">
+    <section id="experts" className="bg-bone pb-28 pt-24">
+      <div className="mx-auto max-w-[1000px] px-6">
+        <div className="mb-16 max-w-[560px]">
+          <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">
             Made by women, for women
           </div>
-          <h2 className="font-display text-[clamp(28px,3.4vw,44px)] font-semibold text-deep-plum">
+          <h2 className="font-display text-[clamp(28px,3.4vw,44px)] font-medium text-deep-plum">
             The experts behind every word
           </h2>
-          <p className="mt-3.5 text-[#4c584a]">
+          <p className="mt-4 text-lg text-charcoal/60">
             Our content and science are reviewed by real specialists —
             because credibility is the reason to believe everything else.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div className="grid grid-cols-1 gap-x-10 gap-y-12 border-t border-charcoal/10 pt-12 sm:grid-cols-2 lg:grid-cols-4">
           {experts.map((expert) => (
-            <div
-              key={expert.name + expert.cred}
-              className="rounded-[18px] border border-[#dfe6db] bg-white px-[22px] py-7 text-center"
-            >
+            <div key={expert.name + expert.cred}>
               <div
-                className="mx-auto mb-4 flex h-[104px] w-[104px] items-center justify-center rounded-full text-[10px] font-bold tracking-[.15em] text-white/80"
+                className="mb-5 h-[72px] w-[72px] rounded-full border border-deep-plum/15"
                 style={{
-                  background: "linear-gradient(135deg,#3D1A33,#C6785C)",
+                  background:
+                    "linear-gradient(135deg, rgba(61,26,51,.12), rgba(198,120,92,.12))",
                 }}
-              >
-                PHOTO
-              </div>
-              <h3 className="font-display text-lg font-semibold text-deep-plum">
+              />
+              <h3 className="font-display text-lg font-medium text-deep-plum">
                 {expert.name}
               </h3>
-              <div className="min-h-[34px] text-[13px] text-[#666]">
+              <div className="mt-1 min-h-[34px] text-[13px] text-charcoal/55">
                 {expert.cred}
               </div>
-              <span className="mt-3 inline-block rounded-full bg-plum-tint px-3 py-[5px] text-[11px] font-bold uppercase tracking-[.06em] text-deep-plum">
+              <div className="mt-1 text-[11px] font-semibold uppercase tracking-[.14em] text-terracotta">
                 {expert.tag}
-              </span>
+              </div>
             </div>
           ))}
         </div>

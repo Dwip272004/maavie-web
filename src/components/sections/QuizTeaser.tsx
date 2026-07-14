@@ -1,42 +1,36 @@
 import Link from "next/link";
 
-const lenses = [
-  { icon: "🌿", label: "Skin" },
-  { icon: "💇", label: "Hair" },
-  { icon: "🔋", label: "Energy" },
-  { icon: "😴", label: "Sleep" },
-  { icon: "🧠", label: "Mood" },
-];
+const lenses = ["Skin", "Hair", "Energy", "Sleep", "Mood"];
 
 export function QuizTeaser() {
   return (
-    <section id="quiz" className="bg-terra-tint pb-24 pt-20 text-center">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mb-3.5 text-xs font-bold uppercase tracking-[.18em] text-terracotta">
+    <section id="quiz" className="bg-bone pb-28 pt-24 text-center">
+      <div className="mx-auto max-w-[600px] px-6">
+        <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">
           Take the Quiz
         </div>
-        <h2 className="font-display text-[clamp(30px,3.6vw,44px)] font-semibold text-deep-plum">
+        <h2 className="font-display text-[clamp(30px,3.6vw,44px)] font-medium text-deep-plum">
           What&apos;s your body telling you?
         </h2>
-        <p className="mx-auto my-4 max-w-[560px] text-lg text-[#6a5147]">
+        <p className="mx-auto mt-4 max-w-[480px] text-lg text-charcoal/60">
           A few honest questions across skin, hair, energy, sleep and mood —
           and we&apos;ll help you make sense of where you are.
         </p>
-        <div className="mb-8 flex flex-wrap justify-center gap-3.5">
-          {lenses.map((lens) => (
-            <span
-              key={lens.label}
-              className="rounded-full border border-[#ecd8cd] bg-white px-[22px] py-2.5 text-sm text-[#6a5147]"
-            >
-              {lens.icon} {lens.label}
+
+        <div className="mt-9 mb-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[.16em] text-terracotta/70">
+          {lenses.map((label, i) => (
+            <span key={label} className="flex items-center gap-3">
+              {i > 0 && <span className="text-terracotta/25">·</span>}
+              {label}
             </span>
           ))}
         </div>
+
         <Link
           href="/quiz"
-          className="inline-block rounded-full bg-deep-plum px-10 py-[17px] text-base font-semibold text-bone transition-transform duration-150 hover:-translate-y-0.5 hover:bg-[#582546]"
+          className="inline-block border-b border-deep-plum pb-1 text-base font-semibold text-deep-plum transition-colors hover:border-terracotta hover:text-terracotta"
         >
-          Take the Quiz
+          Take the Quiz →
         </Link>
       </div>
     </section>

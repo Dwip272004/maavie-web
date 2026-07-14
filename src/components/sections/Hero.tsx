@@ -47,7 +47,7 @@ export function Hero() {
           <span className="text-xs font-bold tracking-[.22em] text-bone/70">
             HERO IMAGE — real, warm, natural light
           </span>
-          <div className="absolute inset-x-[22px] bottom-[22px] rounded-2xl border border-bone/16 bg-[rgba(42,18,36,0.55)] p-4 text-[13px] text-bone">
+          <div className="absolute inset-x-[28px] bottom-[28px] border-t border-bone/20 pt-4 font-display text-[15px] italic leading-snug text-bone/90">
             &ldquo;Midlife is not the end of the story. It&apos;s where
             understanding begins.&rdquo;
           </div>
