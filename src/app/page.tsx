@@ -3,6 +3,7 @@ import { WaitlistModal } from "@/components/WaitlistModal";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { NatureScienceTruth } from "@/components/sections/NatureScienceTruth";
+import { ShopByNeed } from "@/components/sections/ShopByNeed";
 import { QuizTeaser } from "@/components/sections/QuizTeaser";
 import { Science } from "@/components/sections/Science";
 import { Promise } from "@/components/sections/Promise";
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="flex flex-1 flex-col">
         <Hero />
         <NatureScienceTruth />
+        <ShopByNeed />
         <QuizTeaser />
         <Science />
         <Promise />
