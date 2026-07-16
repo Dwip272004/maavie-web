@@ -4,7 +4,6 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { NatureScienceTruth } from "@/components/sections/NatureScienceTruth";
 import { ShopByNeed } from "@/components/sections/ShopByNeed";
-import { QuizTeaser } from "@/components/sections/QuizTeaser";
 import { Science } from "@/components/sections/Science";
 import { Promise } from "@/components/sections/Promise";
 import { Experts } from "@/components/sections/Experts";
@@ -21,7 +20,6 @@ export default function Home() {
         <Hero />
         <NatureScienceTruth />
         <ShopByNeed />
-        <QuizTeaser />
         <Science />
         <Promise />
         <Experts />

@@ -29,7 +29,7 @@ export function Footer() {
             <Link href="#learn" className="mb-2 block text-sm hover:text-bone">
               Blog
             </Link>
-            <Link href="#quiz" className="mb-2 block text-sm hover:text-bone">
+            <Link href="/quiz" className="mb-2 block text-sm hover:text-bone">
               Take the Quiz
             </Link>
           </div>
