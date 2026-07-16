@@ -56,7 +56,7 @@ export function WaitlistModal() {
           />
           <button
             type="submit"
-            className="w-full cursor-pointer rounded-full border-none bg-deep-plum px-8 py-4 text-center font-sans text-[15px] font-semibold text-bone transition-colors hover:bg-[#582546]"
+            className="w-full cursor-pointer rounded-full border-none bg-deep-plum px-8 py-4 text-center font-sans text-[15px] font-semibold text-bone transition-colors hover:bg-[#450110]"
           >
             Join the Waitlist
           </button>

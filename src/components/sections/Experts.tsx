@@ -29,7 +29,7 @@ export function Experts() {
                 className="mb-5 h-[72px] w-[72px] rounded-full border border-deep-plum/15"
                 style={{
                   background:
-                    "linear-gradient(135deg, rgba(61,26,51,.12), rgba(198,120,92,.12))",
+                    "linear-gradient(135deg, rgba(89,5,21,.12), rgba(198,120,92,.12))",
                 }}
               />
               <h3 className="font-display text-lg font-medium text-deep-plum">

@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  /* Maavie brand palette */
-  --color-deep-plum: #3D1A33;
-  --color-plum-accent: #AA3556;
+  /* Maavie brand palette — maroon, matching the old site */
+  --color-deep-plum: #590515;
+  --color-plum-accent: #9D6E6B;
   --color-bone: #F6F2ED;
   --color-soft-sage: #A8B5A2;
   --color-charcoal: #2F3136;
   --color-terracotta: #C6785C;
   --color-sage-tint: #EAEEE7;
   --color-terra-tint: #F5E7E0;
-  --color-plum-tint: #EDE6EB;
+  --color-plum-tint: #F1E1DD;
 }
 
 @theme inline {

@@ -167,7 +167,7 @@ export function ResultScreen({ scores, answers, profile, onSubmitted }: ResultSc
                   className="h-full rounded-full transition-[width] duration-1000 ease-[cubic-bezier(.3,.7,.2,1)]"
                   style={{
                     width: barsFilled ? `${l.pct}%` : "0%",
-                    background: "linear-gradient(90deg,#C6785C,#AA3556)",
+                    background: "linear-gradient(90deg,#C6785C,#9D6E6B)",
                   }}
                 />
               </div>

@@ -40,7 +40,7 @@ export function Nav() {
         label="Join the Waitlist"
         className={`px-6 py-[11px] text-sm hover:-translate-y-0 ${
           solid
-            ? "bg-deep-plum text-bone hover:bg-[#582546]"
+            ? "bg-deep-plum text-bone hover:bg-[#450110]"
             : "border-[1.5px] border-bone/60 bg-transparent text-bone hover:bg-bone/15"
         }`}
       />

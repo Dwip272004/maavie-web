@@ -6,7 +6,7 @@ export function Waitlist() {
       id="waitlist"
       className="pb-24 pt-20 text-center text-bone"
       style={{
-        background: "linear-gradient(160deg,#AA3556,#3D1A33)",
+        background: "linear-gradient(160deg,#9D6E6B,#590515)",
       }}
     >
       <div className="mx-auto max-w-[1200px] px-6">

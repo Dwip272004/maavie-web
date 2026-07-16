@@ -57,7 +57,7 @@ export function QuestionScreen({ step, onAnswerSingle, onAnswerMulti }: Question
               className={`flex w-full items-center gap-[18px] rounded-sm border px-[22px] py-[19px] text-left font-sans text-[16.5px] text-[#3a3238] transition-[border-color,background,box-shadow,transform] duration-200 active:translate-y-px ${
                 selected
                   ? "border-deep-plum bg-plum-tint"
-                  : "border-[#E2D7CA] bg-white/50 hover:border-deep-plum hover:bg-white hover:shadow-[0_6px_22px_rgba(61,26,51,0.06)]"
+                  : "border-[#E2D7CA] bg-white/50 hover:border-deep-plum hover:bg-white hover:shadow-[0_6px_22px_rgba(89,5,21,0.06)]"
               }`}
             >
               <span
@@ -89,7 +89,7 @@ export function QuestionScreen({ step, onAnswerSingle, onAnswerMulti }: Question
             type="button"
             disabled={picked.size === 0}
             onClick={() => onAnswerMulti([...picked])}
-            className="mt-8 w-full cursor-pointer rounded-sm border-none bg-deep-plum px-[18px] py-[18px] font-sans text-[13px] font-semibold uppercase tracking-[.14em] text-bone transition-[background,opacity] duration-[250ms] hover:bg-[#57264a] disabled:cursor-not-allowed disabled:opacity-35"
+            className="mt-8 w-full cursor-pointer rounded-sm border-none bg-deep-plum px-[18px] py-[18px] font-sans text-[13px] font-semibold uppercase tracking-[.14em] text-bone transition-[background,opacity] duration-[250ms] hover:bg-[#450110] disabled:cursor-not-allowed disabled:opacity-35"
           >
             Continue
           </button>

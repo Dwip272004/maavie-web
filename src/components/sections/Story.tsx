@@ -6,7 +6,7 @@ export function Story() {
           className="flex aspect-square items-center justify-center border border-charcoal/10 text-[11px] font-semibold tracking-[.2em] text-charcoal/40"
           style={{
             background:
-              "linear-gradient(135deg, rgba(168,181,162,.18), rgba(61,26,51,.1))",
+              "linear-gradient(135deg, rgba(168,181,162,.18), rgba(89,5,21,.1))",
           }}
         >
           FOUNDERS PHOTO

@@ -14,7 +14,7 @@ export const GUIDE_MODULES: GuideModule[] = [
     id: "mood",
     icon: "🧠",
     title: "Mood & Brain Fog",
-    gradient: "linear-gradient(135deg,#3D1A33,#6a2e57)",
+    gradient: "linear-gradient(135deg,#590515,#7a2f35)",
     whatsHappening:
       "Estrogen and progesterone both shape your brain chemistry. Progesterone's calming effect (via GABA) often fades first — which can show up as anxiety, irritability and lighter sleep. Estrogen supports serotonin, dopamine and verbal memory — so as it dips, you may feel lower, flatter, or reach for a word that just won't come. This is neurochemistry, not a character flaw.",
     checklist: [
@@ -32,7 +32,7 @@ export const GUIDE_MODULES: GuideModule[] = [
     id: "sleep",
     icon: "😴",
     title: "Sleep",
-    gradient: "linear-gradient(135deg,#3a2c52,#3D1A33)",
+    gradient: "linear-gradient(135deg,#3a1f28,#590515)",
     whatsHappening:
       "Progesterone helps you sleep — and it's usually the first hormone to drop, so nights get lighter and more broken. Falling estrogen can trigger night sweats and 3am waking, and the body's stress-hormone (cortisol) rhythm can shift too. The result: you're in bed the same hours, but waking unrested.",
     checklist: [

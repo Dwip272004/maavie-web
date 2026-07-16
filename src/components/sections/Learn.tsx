@@ -6,7 +6,7 @@ const posts = [
     body: "The hormone–blood sugar loop behind midlife fatigue, and what genuinely helps.",
   },
   {
-    tone: "#5c3a4e",
+    tone: "#6b2530",
     tag: "Weight",
     title: "Weight that won't budge",
     body: "How the transition changes metabolism — and why it's not about willpower.",

@@ -29,7 +29,7 @@ export function Hero() {
           style={{
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
-            background: "rgba(61, 26, 51, 0.4)",
+            background: "rgba(89, 5, 21, 0.4)",
             border: "1px solid rgba(255,255,255,0.1)",
           }}
         >
