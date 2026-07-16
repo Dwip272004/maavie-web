@@ -66,3 +66,9 @@ html {
   scrollbar-width: none;
 }
 
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
