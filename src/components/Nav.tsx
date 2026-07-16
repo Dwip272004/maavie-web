@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 export function Nav() {
@@ -23,13 +25,17 @@ export function Nav() {
         solid ? "bg-bone shadow-[0_2px_18px_rgba(0,0,0,0.07)]" : ""
       }`}
     >
-      <div
-        className={`font-display text-[26px] font-bold italic ${
-          solid ? "text-deep-plum" : "text-bone"
-        }`}
-      >
-        maavie<span className="text-terracotta">.</span>
-      </div>
+      <Link href="/" className="block">
+        <Image
+          src="/images/logo.png"
+          alt="Maavie — Built for the biology of women"
+          width={895}
+          height={489}
+          priority
+          className="h-11 w-auto transition-[filter] duration-300"
+          style={!solid ? { filter: "brightness(0) invert(1)" } : undefined}
+        />
+      </Link>
       <WaitlistTrigger
         label="Join the Waitlist"
         className={`px-6 py-[11px] text-sm hover:-translate-y-0 ${

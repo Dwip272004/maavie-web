@@ -2,6 +2,7 @@ import { WaitlistModalProvider } from "@/components/waitlist-modal-context";
 import { WaitlistModal } from "@/components/WaitlistModal";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/sections/Hero";
+import { NatureScienceTruth } from "@/components/sections/NatureScienceTruth";
 import { QuizTeaser } from "@/components/sections/QuizTeaser";
 import { Science } from "@/components/sections/Science";
 import { Promise } from "@/components/sections/Promise";
@@ -17,6 +18,7 @@ export default function Home() {
       <Nav />
       <main className="flex flex-1 flex-col">
         <Hero />
+        <NatureScienceTruth />
         <QuizTeaser />
         <Science />
         <Promise />
