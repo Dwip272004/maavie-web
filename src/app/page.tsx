@@ -5,6 +5,7 @@ import { Hero } from "@/components/sections/Hero";
 import { NatureScienceTruth } from "@/components/sections/NatureScienceTruth";
 import { ShopByNeed } from "@/components/sections/ShopByNeed";
 import { Science } from "@/components/sections/Science";
+import { BrandStory } from "@/components/sections/BrandStory";
 import { Promise } from "@/components/sections/Promise";
 import { Experts } from "@/components/sections/Experts";
 import { Story } from "@/components/sections/Story";
@@ -21,6 +22,7 @@ export default function Home() {
         <NatureScienceTruth />
         <ShopByNeed />
         <Science />
+        <BrandStory />
         <Promise />
         <Experts />
         <Story />
