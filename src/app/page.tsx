@@ -10,6 +10,7 @@ import { Promise } from "@/components/sections/Promise";
 import { Experts } from "@/components/sections/Experts";
 import { Learn } from "@/components/sections/Learn";
 import { Waitlist } from "@/components/sections/Waitlist";
+import { Community } from "@/components/sections/Community";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
         <Experts />
         <Learn />
         <Waitlist />
+        <Community />
       </main>
       <Footer />
       <WaitlistModal />
