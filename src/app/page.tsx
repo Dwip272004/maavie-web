@@ -8,7 +8,6 @@ import { Science } from "@/components/sections/Science";
 import { BrandStory } from "@/components/sections/BrandStory";
 import { Promise } from "@/components/sections/Promise";
 import { Experts } from "@/components/sections/Experts";
-import { Story } from "@/components/sections/Story";
 import { Learn } from "@/components/sections/Learn";
 import { Waitlist } from "@/components/sections/Waitlist";
 import { Footer } from "@/components/Footer";
@@ -25,7 +24,6 @@ export default function Home() {
         <BrandStory />
         <Promise />
         <Experts />
-        <Story />
         <Learn />
         <Waitlist />
       </main>
