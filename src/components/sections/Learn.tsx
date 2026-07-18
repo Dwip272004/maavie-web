@@ -21,7 +21,14 @@ const posts = [
 
 export function Learn() {
   return (
-    <section id="learn" className="bg-deep-plum pb-28 pt-24 text-bone">
+    <section
+      id="learn"
+      className="pb-28 pt-24 text-bone"
+      style={{
+        background:
+          "radial-gradient(120% 100% at 12% 0%, rgba(198,120,92,.22), transparent 55%), #590515",
+      }}
+    >
       <div className="mx-auto max-w-[1000px] px-6">
         <div className="mb-16 max-w-[560px]">
           <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">

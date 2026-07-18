@@ -9,7 +9,11 @@ const experts = [
 
 export function Experts() {
   return (
-    <section id="experts" className="bg-deep-plum pb-24 pt-20">
+    <section
+      id="experts"
+      className="pb-24 pt-20"
+      style={{ background: "linear-gradient(200deg, #590515 0%, #7a1530 100%)" }}
+    >
       <div className="mx-auto max-w-4xl px-6 text-center sm:px-10">
         <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-plum-tint/60">
           Expert-Led
