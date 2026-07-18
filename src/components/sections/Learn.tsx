@@ -21,7 +21,7 @@ const posts = [
 
 export function Learn() {
   return (
-    <section id="learn" className="bg-charcoal pb-28 pt-24 text-bone">
+    <section id="learn" className="bg-deep-plum pb-28 pt-24 text-bone">
       <div className="mx-auto max-w-[1000px] px-6">
         <div className="mb-16 max-w-[560px]">
           <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">

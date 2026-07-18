@@ -3,7 +3,7 @@ import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 export function BrandStory() {
   return (
-    <section id="story" className="overflow-hidden bg-white">
+    <section id="story" className="overflow-hidden bg-bone">
       <div className="flex min-h-[600px] flex-col lg:flex-row">
         <div className="flex w-full items-center px-6 py-14 sm:px-10 sm:py-20 lg:w-[52%] lg:px-16 lg:py-24 xl:px-24">
           <div className="max-w-[520px]">
@@ -48,7 +48,7 @@ export function BrandStory() {
             className="object-cover object-center"
             sizes="(max-width: 1024px) 100vw, 48vw"
           />
-          <div className="absolute inset-y-0 left-0 hidden w-16 bg-gradient-to-r from-white to-transparent lg:block" />
+          <div className="absolute inset-y-0 left-0 hidden w-16 bg-gradient-to-r from-bone to-transparent lg:block" />
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@ export function ShopByNeed() {
   const active = tabs[activeIndex];
 
   return (
-    <section className="bg-white">
+    <section className="bg-bone">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-4 px-6 pb-6 pt-12 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
         <h2 className="shrink-0 text-2xl font-light text-charcoal sm:text-3xl">
           What does <em className="italic">your</em> body need?

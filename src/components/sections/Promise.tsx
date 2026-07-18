@@ -7,7 +7,7 @@ const pillars = [
 
 export function Promise() {
   return (
-    <section id="promise" className="bg-charcoal pb-28 pt-24 text-bone">
+    <section id="promise" className="bg-deep-plum pb-28 pt-24 text-bone">
       <div className="mx-auto max-w-[1000px] px-6">
         <div className="mb-16 max-w-[520px]">
           <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">
