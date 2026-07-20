@@ -21,9 +21,7 @@ export function Science() {
         <EstrogenBodyDiagram />
 
         <p className="mx-auto mt-20 max-w-[520px] text-center font-display text-2xl font-light italic leading-snug text-bone">
-          &ldquo;One cause, many signals.&rdquo; Skin, hair, energy, weight,
-          sleep and mood aren&apos;t separate problems — they&apos;re linked
-          expressions of one hormonal transition.
+          &ldquo;One cause, many signals.&rdquo;
         </p>
 
         <div className="mx-auto mt-12 max-w-[520px] border-t border-bone/15 pt-6 text-center text-[13px] text-bone/50">

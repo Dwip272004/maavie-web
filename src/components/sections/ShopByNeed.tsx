@@ -7,28 +7,28 @@ import Link from "next/link";
 const tabs = [
   {
     label: "Trying to Conceive",
-    image: "/images/woman-oil.png",
+    image: "/images/trying-to-conceive.jpeg",
     headline: "Your skin is already responding to the journey — even before it begins.",
     description:
       "Hormonal shifts, cycle tracking, stress, supplements — your body is working hard. Skin sensitivity, breakouts, and pigmentation can all flare during this season. Maavie supports you with formulas that are safe, gentle, and hormone-aware from day one.",
   },
   {
     label: "Pregnancy & Postpartum",
-    image: "/images/pregnancy-postpartum.png",
+    image: "/images/pregnancy-postpartum-new.jpeg",
     headline: "Your body is doing something extraordinary. And your skin feels every part of it.",
     description:
       'Pigmentation, dryness, sensitivity, sudden changes you never expected — all while the world tells you to "just enjoy the glow." We believe mothers deserve more than that. They deserve care, understanding, and products made for this season of life.',
   },
   {
     label: "Perimenopause",
-    image: "/images/perimenopause.png",
+    image: "/images/perimenopause-new.jpeg",
     headline: "One day your skincare works. The next, your skin feels completely different.",
     description:
       "Unexpected dryness. Fine lines. Hormonal breakouts returning years later. Perimenopause changes more than we talk about — and your skincare should change with you.",
   },
   {
     label: "Menopause",
-    image: "/images/menopause.png",
+    image: "/images/menopause-new.jpeg",
     headline: "Your skin is changing because your body is changing.",
     description:
       'Thinner skin. Less bounce. More dryness. More sensitivity. This isn\'t something to "fix." It\'s a new season that deserves softer, smarter support.',

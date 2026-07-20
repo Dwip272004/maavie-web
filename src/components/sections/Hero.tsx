@@ -9,7 +9,7 @@ export function Hero() {
       style={{ minHeight: "88vh" }}
     >
       <Image
-        src="/images/banner.png"
+        src="/images/main-banner.jpeg"
         alt="Maavie — Bodies evolve. Your care should too."
         fill
         priority
