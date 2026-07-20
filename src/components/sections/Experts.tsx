@@ -59,7 +59,8 @@ export function Experts() {
           Only what your body needs. Nothing more.
         </p>
         <p className="mt-3 text-xs uppercase tracking-[.18em] text-terracotta/80">
-          Hover a name to hear from them directly
+          <span className="sm:hidden">Tap a name to hear from them directly</span>
+          <span className="hidden sm:inline">Hover a name to hear from them directly</span>
         </p>
       </div>
 

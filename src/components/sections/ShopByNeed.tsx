@@ -45,22 +45,25 @@ export function ShopByNeed() {
         <h2 className="shrink-0 text-2xl font-light text-charcoal sm:text-3xl">
           What does <em className="italic">your</em> body need?
         </h2>
-        <nav className="scrollbar-hide flex items-center gap-5 overflow-x-auto pb-1 sm:gap-7">
-          {tabs.map((tab, i) => (
-            <button
-              key={tab.label}
-              type="button"
-              onClick={() => setActiveIndex(i)}
-              className={`shrink-0 whitespace-nowrap border-b pb-0.5 text-[11px] font-medium uppercase tracking-[0.15em] transition-colors duration-200 ${
-                i === activeIndex
-                  ? "border-charcoal text-charcoal"
-                  : "border-transparent text-charcoal/35 hover:text-charcoal/70"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </nav>
+        <div className="relative -mx-6 sm:mx-0">
+          <nav className="scrollbar-hide flex items-center gap-5 overflow-x-auto px-6 pb-1 sm:gap-7 sm:px-0">
+            {tabs.map((tab, i) => (
+              <button
+                key={tab.label}
+                type="button"
+                onClick={() => setActiveIndex(i)}
+                className={`shrink-0 whitespace-nowrap border-b pb-0.5 text-[11px] font-medium uppercase tracking-[0.15em] transition-colors duration-200 ${
+                  i === activeIndex
+                    ? "border-charcoal text-charcoal"
+                    : "border-transparent text-charcoal/35 hover:text-charcoal/70"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </nav>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-terra-tint to-transparent sm:hidden" />
+        </div>
       </div>
 
       <div className="flex min-h-[480px] flex-col lg:flex-row">
