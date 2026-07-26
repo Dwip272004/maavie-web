@@ -4,7 +4,10 @@ export function Footer() {
   return (
     <footer
       className="py-[52px] pb-[30px] text-bone/75"
-      style={{ background: "linear-gradient(180deg, #590515 0%, #3d030d 100%)" }}
+      style={{
+        background: "#26040A",
+        borderTop: "1px solid rgba(198,120,92,0.25)",
+      }}
     >
       <div className="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-[30px] px-6">
         <div>
