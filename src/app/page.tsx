@@ -3,13 +3,13 @@ import { WaitlistModal } from "@/components/WaitlistModal";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { NatureScienceTruth } from "@/components/sections/NatureScienceTruth";
-import { ShopByNeed } from "@/components/sections/ShopByNeed";
+import { QuizTeaser } from "@/components/sections/QuizTeaser";
 import { Science } from "@/components/sections/Science";
+import { Ingredients } from "@/components/sections/Ingredients";
 import { BrandStory } from "@/components/sections/BrandStory";
 import { Experts } from "@/components/sections/Experts";
 import { Learn } from "@/components/sections/Learn";
 import { Waitlist } from "@/components/sections/Waitlist";
-import { Community } from "@/components/sections/Community";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -19,13 +19,13 @@ export default function Home() {
       <main className="flex flex-1 flex-col">
         <Hero />
         <NatureScienceTruth />
-        <ShopByNeed />
+        <QuizTeaser />
         <Science />
+        <Ingredients />
         <BrandStory />
         <Experts />
         <Learn />
         <Waitlist />
-        <Community />
       </main>
       <Footer />
       <WaitlistModal />

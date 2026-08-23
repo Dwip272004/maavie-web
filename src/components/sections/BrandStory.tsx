@@ -11,27 +11,26 @@ export function BrandStory() {
               Our Story
             </p>
             <h2
-              className="mb-6 font-light leading-[1.05] text-[#231F20]"
+              className="mb-3 font-light leading-[1.05] text-[#231F20]"
               style={{ fontSize: "clamp(2.2rem, 3.8vw, 3.2rem)" }}
             >
-              Embodying
-              <br />
-              <em className="italic text-plum-accent">Change.</em>
+              Why we built <em className="italic text-plum-accent">Maavie.</em>
             </h2>
+            <div className="mb-5 text-sm font-semibold text-plum-accent">
+              Nupur &amp; Shivani · Founders
+            </div>
             <div className="mb-8 h-px w-10 bg-deep-plum" style={{ opacity: 0.35 }} />
-            <p
-              className="mb-5 leading-[1.75] text-[#231F20]"
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.1rem)" }}
-            >
-              Your body deserves to be honoured at every stage of life.
-            </p>
             <p className="mb-5 text-base leading-relaxed text-[#4F4242]">
-              We exist to champion your changing body — naturally. Arming you with the
-              knowledge, products, and community you need to thrive at every stage of womanhood.
+              Nupur watched her mother move through perimenopause in silence, then watched
+              her sister, a doctor, face the same shift — but with answers, and saw how much
+              that changed. Shivani, a new mom, knew the other side: postpartum rage and
+              anxiety no one explained. Same story, different chapters — hormones shifting,
+              and no one there to help.
             </p>
             <p className="mb-12 text-base leading-relaxed text-[#4F4242]">
-              From hormonal pigmentation to hair thinning and skin sensitivity, our formulas
-              support your body&rsquo;s every evolution.
+              So we built what our mothers never had and we needed ourselves: science
+              explained plainly, care without judgement — so no woman feels like she&rsquo;s
+              losing herself, alone.
             </p>
             <WaitlistTrigger
               label="Join the Waitlist"

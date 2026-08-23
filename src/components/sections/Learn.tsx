@@ -1,23 +1,5 @@
-const posts = [
-  {
-    tone: "#8f5b48",
-    tag: "Energy",
-    title: "Why you're exhausted at 45",
-    body: "The hormone–blood sugar loop behind midlife fatigue, and what genuinely helps.",
-  },
-  {
-    tone: "#6b2530",
-    tag: "Weight",
-    title: "Weight that won't budge",
-    body: "How the transition changes metabolism — and why it's not about willpower.",
-  },
-  {
-    tone: "#5f6d5a",
-    tag: "Sleep & Mood",
-    title: "The 3am wake-up, decoded",
-    body: "The hormone–sleep–mood loop, and small shifts that support steadier nights.",
-  },
-];
+import Link from "next/link";
+import { BLOG_POSTS } from "@/components/blog/posts";
 
 export function Learn() {
   return (
@@ -44,22 +26,22 @@ export function Learn() {
         </div>
 
         <div className="grid grid-cols-1 gap-x-10 gap-y-12 border-t border-bone/15 pt-12 sm:grid-cols-3">
-          {posts.map((post) => (
-            <article key={post.title}>
+          {BLOG_POSTS.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
               <div
-                className="mb-5 aspect-[4/3]"
+                className="mb-5 aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02]"
                 style={{ backgroundColor: post.tone }}
               />
               <span className="text-[11px] font-semibold uppercase tracking-[.14em] text-terracotta">
-                {post.tag}
+                {post.category} · {post.readingTime}
               </span>
-              <h3 className="mt-2 font-display text-xl font-medium text-bone">
+              <h3 className="mt-2 font-display text-xl font-medium text-bone transition-colors group-hover:text-terracotta">
                 {post.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-bone/55">
-                {post.body}
+                {post.metaDescription}
               </p>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
