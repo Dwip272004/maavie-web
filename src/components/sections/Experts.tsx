@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 const experts = [
@@ -10,20 +11,23 @@ const experts = [
     tag: "Gynaecology",
     quote:
       "Every formula starts with one question: is this safe for a woman's hormones, at any stage of life?",
+    photo: null,
   },
   {
-    name: "Dr. [Name]",
-    cred: "MD, Dermatology",
+    name: "Dr. Neha Taneja",
+    cred: "MD Dermatology (AIIMS, New Delhi), MRCP SCE (UK)",
     tag: "Dermatology",
     quote:
       "Melanin-rich skin deserves its own science — not a one-size-fits-all approach borrowed from elsewhere.",
+    photo: "/images/dr-neha-taneja.jpeg",
   },
   {
-    name: "[Name]",
-    cred: "Clinical Nutritionist, RD",
+    name: "Jyothi Machaiah",
+    cred: "MSc Nutrition · Certified Menopause Practitioner",
     tag: "Nutrition",
     quote:
       "The right nutrients can genuinely support your body through every hormonal transition.",
+    photo: "/images/jyothi-machaiah.png",
   },
   {
     name: "[Name]",
@@ -31,6 +35,7 @@ const experts = [
     tag: "Coaching",
     quote:
       "You don't have to navigate this alone. Understanding is the first step to feeling like yourself again.",
+    photo: null,
   },
 ];
 
@@ -79,17 +84,28 @@ export function Experts() {
                 className="w-full cursor-pointer border-none bg-transparent p-0 text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-bone/60 focus-visible:ring-offset-2 focus-visible:ring-offset-deep-plum sm:text-left"
               >
                 <div
-                  className="mx-auto mb-5 h-[72px] w-[72px] rounded-full border transition-all duration-300 sm:mx-0"
+                  className="relative mx-auto mb-5 h-[72px] w-[72px] overflow-hidden rounded-full border transition-all duration-300 sm:mx-0"
                   style={{
-                    background:
-                      "linear-gradient(135deg, rgba(246,242,237,.14), rgba(198,120,92,.2))",
+                    background: expert.photo
+                      ? undefined
+                      : "linear-gradient(135deg, rgba(246,242,237,.14), rgba(198,120,92,.2))",
                     borderColor: isActive ? "rgba(246,242,237,.55)" : "rgba(246,242,237,.2)",
                     boxShadow: isActive
                       ? "0 0 0 6px rgba(198,120,92,.16), 0 8px 20px rgba(0,0,0,.25)"
                       : "none",
                     transform: isActive ? "scale(1.08)" : "scale(1)",
                   }}
-                />
+                >
+                  {expert.photo && (
+                    <Image
+                      src={expert.photo}
+                      alt={expert.name}
+                      fill
+                      sizes="72px"
+                      className="object-cover"
+                    />
+                  )}
+                </div>
                 <h3 className="font-display text-lg font-medium text-bone">{expert.name}</h3>
 
                 <div className="mt-1 min-h-[52px]">

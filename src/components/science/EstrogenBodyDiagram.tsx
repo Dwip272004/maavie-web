@@ -36,9 +36,9 @@ const areas: BodyArea[] = [
       "Extends the anagen (growth) phase of the hair cycle",
     ],
     timeframe: "Noticeable shifts from 6–12 months",
-    hotspot: { cx: 100, cy: 18 },
+    hotspot: { cx: 197, cy: 79 },
     side: "left",
-    highlight: { cx: 100, cy: 30, rx: 32, ry: 40 },
+    highlight: { cx: 190, cy: 105, rx: 30, ry: 35 },
   },
   {
     id: "mood",
@@ -55,9 +55,9 @@ const areas: BodyArea[] = [
       "Stabilizes mood cycles linked to hormonal fluctuation",
     ],
     timeframe: "Emotional shifts often felt within weeks",
-    hotspot: { cx: 82, cy: 58 },
+    hotspot: { cx: 174, cy: 114 },
     side: "left",
-    highlight: { cx: 100, cy: 58, rx: 26, ry: 28 },
+    highlight: { cx: 190, cy: 105, rx: 26, ry: 28 },
   },
   {
     id: "energy",
@@ -74,9 +74,9 @@ const areas: BodyArea[] = [
       "Enhances physical endurance and recovery",
     ],
     timeframe: "Sleep improvements often within weeks",
-    hotspot: { cx: 78, cy: 175 },
+    hotspot: { cx: 127, cy: 161 },
     side: "left",
-    highlight: { cx: 100, cy: 172, rx: 42, ry: 30 },
+    highlight: { cx: 170, cy: 200, rx: 56, ry: 51 },
   },
   {
     id: "skin",
@@ -93,9 +93,9 @@ const areas: BodyArea[] = [
       "Reduces pore size and skin coarseness",
     ],
     timeframe: "Visible changes from 3–6 months",
-    hotspot: { cx: 158, cy: 145 },
+    hotspot: { cx: 263, cy: 300 },
     side: "right",
-    highlight: { cx: 100, cy: 200, rx: 72, ry: 130 },
+    highlight: { cx: 246, cy: 305, rx: 33, ry: 89 },
   },
   {
     id: "bones",
@@ -112,9 +112,9 @@ const areas: BodyArea[] = [
       "Supports joint lubrication and cartilage health",
     ],
     timeframe: "Protective effects begin immediately",
-    hotspot: { cx: 118, cy: 228 },
+    hotspot: { cx: 202, cy: 245 },
     side: "right",
-    highlight: { cx: 100, cy: 270, rx: 28, ry: 100 },
+    highlight: { cx: 176, cy: 231, rx: 40, ry: 86 },
   },
   {
     id: "weight",
@@ -131,87 +131,17 @@ const areas: BodyArea[] = [
       "Slows base metabolism — caloric needs often decrease",
     ],
     timeframe: "Redistribution over 1–3 years",
-    hotspot: { cx: 152, cy: 345 },
+    hotspot: { cx: 155, cy: 312 },
     side: "right",
-    highlight: { cx: 100, cy: 360, rx: 54, ry: 96 },
+    highlight: { cx: 162, cy: 317, rx: 73, ry: 54 },
   },
 ];
 
-// ─── Body silhouette — local space: x 0–200, y 0–500 ───
-const BODY_PATH = `
-  M 100 8
-  C 128 8, 140 30, 140 54
-  C 140 76, 128 90, 114 90
-  C 110 96, 108 102, 108 116
-  C 128 116, 155 120, 170 138
-
-  C 182 152, 186 174, 182 194
-  C 178 212, 174 230, 170 246
-  C 168 256, 166 266, 164 272
-  C 162 268, 160 256, 159 244
-  C 157 226, 154 208, 150 194
-
-  C 146 180, 142 170, 136 164
-  C 132 160, 130 167, 130 182
-  C 130 198, 132 216, 134 234
-  C 136 248, 140 262, 146 276
-  C 150 288, 154 300, 154 316
-
-  C 154 330, 152 347, 150 365
-  C 149 378, 148 389, 150 402
-  C 152 415, 151 431, 148 447
-  C 145 459, 140 469, 136 475
-  C 133 480, 126 482, 118 480
-  L 112 478
-  C 110 468, 108 453, 107 437
-  C 106 419, 105 405, 106 391
-  C 107 373, 108 353, 108 337
-  C 106 329, 102 325, 100 325
-  C 98 325, 94 329, 92 337
-  C 92 353, 93 373, 94 391
-  C 95 405, 94 419, 93 437
-  C 92 453, 90 468, 88 478
-  L 82 480
-  C 74 482, 67 480, 64 475
-  C 60 469, 55 459, 52 447
-  C 49 431, 48 415, 50 402
-  C 52 389, 51 378, 51 365
-  C 48 347, 46 330, 46 316
-
-  C 46 300, 50 288, 54 276
-  C 60 262, 64 248, 66 234
-  C 68 216, 70 198, 70 182
-  C 70 167, 68 160, 64 164
-
-  C 58 170, 54 180, 50 194
-  C 46 208, 43 226, 41 244
-  C 40 256, 38 268, 36 272
-  C 34 266, 32 256, 30 246
-  C 26 230, 22 212, 18 194
-  C 14 174, 18 152, 30 138
-
-  C 45 120, 72 116, 92 116
-  C 92 102, 90 96, 86 90
-  C 72 90, 60 76, 60 54
-  C 60 30, 72 8, 100 8
-  Z
-`;
-
-const HAIR_PATH = `
-  M 70 52
-  C 66 34, 68 14, 82 8
-  C 88 4, 95 2, 100 2
-  C 105 2, 112 4, 118 8
-  C 132 14, 134 34, 130 52
-  C 136 38, 140 20, 132 10
-  C 124 0, 110 -2, 100 -2
-  C 90 -2, 76 0, 68 10
-  C 60 20, 64 38, 70 52
-  Z
-`;
-
-// X-offset of the silhouette group within the 520×540 SVG
-const DX = 160;
+// X-offset of the image within the 680×580 SVG
+const DX = 140;
+// Image display region — local space 0–340 x, 0–530 y
+const IMG_W = 340;
+const IMG_H = 530;
 
 function BodyDiagram({
   activeId,
@@ -226,22 +156,19 @@ function BodyDiagram({
   const sx = (x: number) => DX + x;
   const sy = (y: number) => y + 10;
 
-  const LABEL_LEFT_X = 148;
-  const LABEL_RIGHT_X = 372;
-  const LABEL_W = 142;
+  const LABEL_LEFT_X = 128;
+  const LABEL_RIGHT_X = 494;
+  const LABEL_W = 122;
 
   return (
     <svg
-      viewBox="0 0 520 540"
+      viewBox="0 0 680 580"
       style={{ width: "100%", height: "100%" }}
       aria-label="Female body diagram — click a region to learn more"
     >
       <defs>
-        <clipPath id="silhouette-clip">
-          <path d={BODY_PATH} transform={`translate(${DX}, 10)`} />
-        </clipPath>
-        <filter id="area-glow" x="-70%" y="-50%" width="240%" height="200%">
-          <feGaussianBlur stdDeviation="18" result="blur" />
+        <filter id="area-glow" x="-80%" y="-60%" width="260%" height="220%">
+          <feGaussianBlur stdDeviation="20" result="blur" />
         </filter>
         <filter id="dot-glow" x="-120%" y="-120%" width="340%" height="340%">
           <feGaussianBlur stdDeviation="4" result="blur" />
@@ -250,34 +177,31 @@ function BodyDiagram({
             <feMergeNode in="SourceGraphic" />
           </feMerge>
         </filter>
-        <linearGradient id="body-grad" x1="0.35" y1="0" x2="0.65" y2="1">
-          <stop offset="0%" stopColor="rgba(240,210,200,0.18)" />
-          <stop offset="55%" stopColor="rgba(232,195,185,0.12)" />
-          <stop offset="100%" stopColor="rgba(220,180,168,0.07)" />
-        </linearGradient>
+        <filter id="silhouette-tint" colorInterpolationFilters="sRGB">
+          <feFlood floodColor="#DBC8BA" floodOpacity="1" result="tinted" />
+          <feComposite in="tinted" in2="SourceAlpha" operator="in" />
+        </filter>
       </defs>
 
       <ellipse
         cx={sx(highlighted.highlight.cx)}
         cy={sy(highlighted.highlight.cy)}
-        rx={highlighted.highlight.rx + 36}
-        ry={highlighted.highlight.ry + 36}
+        rx={highlighted.highlight.rx + 40}
+        ry={highlighted.highlight.ry + 40}
         fill={highlighted.colorMuted}
         filter="url(#area-glow)"
         style={{ transition: "all 0.55s ease" }}
       />
 
-      <path d={BODY_PATH} transform={`translate(${DX}, 10)`} fill="url(#body-grad)" />
-
-      <path
-        d={HAIR_PATH}
-        transform={`translate(${DX}, 10)`}
-        fill={
-          activeId === "hair" || hoveredId === "hair"
-            ? "rgba(232,168,164,0.30)"
-            : "rgba(210,168,160,0.22)"
-        }
-        style={{ transition: "fill 0.4s ease" }}
+      <image
+        href="/images/estrogen-silhouette.png"
+        x={DX}
+        y={10}
+        width={IMG_W}
+        height={IMG_H}
+        preserveAspectRatio="xMidYMid meet"
+        filter="url(#silhouette-tint)"
+        opacity="0.9"
       />
 
       <ellipse
@@ -286,31 +210,7 @@ function BodyDiagram({
         rx={highlighted.highlight.rx}
         ry={highlighted.highlight.ry}
         fill={highlighted.colorMuted}
-        clipPath="url(#silhouette-clip)"
         style={{ transition: "all 0.45s ease" }}
-      />
-
-      <path
-        d={HAIR_PATH}
-        transform={`translate(${DX}, 10)`}
-        fill="none"
-        stroke={
-          activeId === "hair" || hoveredId === "hair"
-            ? "#E8A8A4"
-            : "rgba(220,185,178,0.30)"
-        }
-        strokeWidth="0.8"
-        style={{ transition: "stroke 0.4s ease" }}
-      />
-
-      <path
-        d={BODY_PATH}
-        transform={`translate(${DX}, 10)`}
-        fill="none"
-        stroke={highlighted.color}
-        strokeWidth="1.1"
-        strokeOpacity="0.55"
-        style={{ transition: "stroke 0.4s ease" }}
       />
 
       {areas.map((area) => {
