@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -11,12 +12,13 @@ export function Footer() {
     >
       <div className="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-[30px] px-6">
         <div>
-          <div className="font-display text-[26px] font-bold italic text-bone">
-            maavie<span className="text-terracotta">.</span>
-          </div>
-          <div className="mt-1.5 font-display italic text-soft-sage">
-            Science you can feel.
-          </div>
+          <Image
+            src="/images/maavie-footer-logo.png"
+            alt="Maavie — Built for the Biology of Women"
+            width={810}
+            height={587}
+            className="h-[92px] w-auto"
+          />
           <p className="mt-3.5 max-w-[280px] text-[13px]">
             Understand your hormones. Change your life.
           </p>

@@ -1,5 +1,3 @@
-import { WaitlistTrigger } from "@/components/WaitlistTrigger";
-
 export function Waitlist() {
   return (
     <section
@@ -17,10 +15,14 @@ export function Waitlist() {
           Join the waitlist and be first to know when Maavie launches — with
           the honest, science-first version, straight to your inbox.
         </p>
-        <WaitlistTrigger
-          label="Join the Waitlist"
-          className="bg-bone px-10 py-[17px] text-base text-deep-plum hover:bg-white"
-        />
+        <a
+          href="https://www.instagram.com/maavie.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block cursor-pointer rounded-full bg-bone px-10 py-[17px] font-sans text-base font-semibold text-deep-plum transition-transform duration-150 hover:-translate-y-0.5 hover:bg-white"
+        >
+          Join the Community
+        </a>
       </div>
     </section>
   );

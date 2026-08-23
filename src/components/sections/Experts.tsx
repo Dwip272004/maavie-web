@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 const experts = [
   {
@@ -30,12 +29,12 @@ const experts = [
     photo: "/images/jyothi-machaiah.png",
   },
   {
-    name: "[Name]",
-    cred: "Certified Menopause Coach",
+    name: "Gayathri Lewis",
+    cred: "Menopause and Hormonal Health Coach",
     tag: "Coaching",
     quote:
       "You don't have to navigate this alone. Understanding is the first step to feeling like yourself again.",
-    photo: null,
+    photo: "/images/gayathri-lewis.jpeg",
   },
 ];
 
@@ -62,10 +61,6 @@ export function Experts() {
         </h2>
         <p className="mx-auto max-w-lg text-base font-light text-bone/55">
           Only what your body needs. Nothing more.
-        </p>
-        <p className="mt-3 text-xs uppercase tracking-[.18em] text-terracotta/80">
-          <span className="sm:hidden">Tap a name to hear from them directly</span>
-          <span className="hidden sm:inline">Hover a name to hear from them directly</span>
         </p>
       </div>
 
@@ -129,10 +124,14 @@ export function Experts() {
       </div>
 
       <div className="pt-16 text-center">
-        <WaitlistTrigger
-          label="Join the Waitlist"
-          className="bg-bone px-9 py-4 text-[11px] uppercase tracking-[0.18em] text-deep-plum hover:bg-white"
-        />
+        <a
+          href="https://www.instagram.com/maavie.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block cursor-pointer rounded-full bg-bone px-9 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-deep-plum transition-transform duration-150 hover:-translate-y-0.5 hover:bg-white"
+        >
+          Join the Community
+        </a>
       </div>
     </section>
   );
