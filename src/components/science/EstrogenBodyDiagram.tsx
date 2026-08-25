@@ -36,9 +36,9 @@ const areas: BodyArea[] = [
       "Extends the anagen (growth) phase of the hair cycle",
     ],
     timeframe: "Noticeable shifts from 6–12 months",
-    hotspot: { cx: 197, cy: 79 },
+    hotspot: { cx: 145, cy: 63 },
     side: "left",
-    highlight: { cx: 190, cy: 105, rx: 30, ry: 35 },
+    highlight: { cx: 145, cy: 85, rx: 30, ry: 40 },
   },
   {
     id: "mood",
@@ -55,9 +55,9 @@ const areas: BodyArea[] = [
       "Stabilizes mood cycles linked to hormonal fluctuation",
     ],
     timeframe: "Emotional shifts often felt within weeks",
-    hotspot: { cx: 174, cy: 114 },
+    hotspot: { cx: 133, cy: 120 },
     side: "left",
-    highlight: { cx: 190, cy: 105, rx: 26, ry: 28 },
+    highlight: { cx: 140, cy: 85, rx: 26, ry: 36 },
   },
   {
     id: "energy",
@@ -74,9 +74,9 @@ const areas: BodyArea[] = [
       "Enhances physical endurance and recovery",
     ],
     timeframe: "Sleep improvements often within weeks",
-    hotspot: { cx: 127, cy: 161 },
+    hotspot: { cx: 99, cy: 185 },
     side: "left",
-    highlight: { cx: 170, cy: 200, rx: 56, ry: 51 },
+    highlight: { cx: 130, cy: 200, rx: 52, ry: 58 },
   },
   {
     id: "skin",
@@ -93,9 +93,9 @@ const areas: BodyArea[] = [
       "Reduces pore size and skin coarseness",
     ],
     timeframe: "Visible changes from 3–6 months",
-    hotspot: { cx: 263, cy: 300 },
+    hotspot: { cx: 229, cy: 233 },
     side: "right",
-    highlight: { cx: 246, cy: 305, rx: 33, ry: 89 },
+    highlight: { cx: 210, cy: 250, rx: 40, ry: 105 },
   },
   {
     id: "bones",
@@ -112,9 +112,9 @@ const areas: BodyArea[] = [
       "Supports joint lubrication and cartilage health",
     ],
     timeframe: "Protective effects begin immediately",
-    hotspot: { cx: 202, cy: 245 },
+    hotspot: { cx: 151, cy: 294 },
     side: "right",
-    highlight: { cx: 176, cy: 231, rx: 40, ry: 86 },
+    highlight: { cx: 145, cy: 308, rx: 34, ry: 105 },
   },
   {
     id: "weight",
@@ -131,17 +131,17 @@ const areas: BodyArea[] = [
       "Slows base metabolism — caloric needs often decrease",
     ],
     timeframe: "Redistribution over 1–3 years",
-    hotspot: { cx: 155, cy: 312 },
+    hotspot: { cx: 148, cy: 359 },
     side: "right",
-    highlight: { cx: 162, cy: 317, rx: 73, ry: 54 },
+    highlight: { cx: 145, cy: 372, rx: 50, ry: 80 },
   },
 ];
 
-// X-offset of the image within the 680×580 SVG
-const DX = 140;
-// Image display region — local space 0–340 x, 0–530 y
-const IMG_W = 340;
-const IMG_H = 530;
+// X-offset of the image within the 620×530 SVG
+const DX = 160;
+// Image display region — local space 0–290 x, 0–490 y (frontal anatomical figure)
+const IMG_W = 290;
+const IMG_H = 490;
 
 function BodyDiagram({
   activeId,
@@ -156,13 +156,13 @@ function BodyDiagram({
   const sx = (x: number) => DX + x;
   const sy = (y: number) => y + 10;
 
-  const LABEL_LEFT_X = 128;
-  const LABEL_RIGHT_X = 494;
-  const LABEL_W = 122;
+  const LABEL_LEFT_X = 148;
+  const LABEL_RIGHT_X = 462;
+  const LABEL_W = 125;
 
   return (
     <svg
-      viewBox="0 0 680 580"
+      viewBox="0 0 620 530"
       style={{ width: "100%", height: "100%" }}
       aria-label="Female body diagram — click a region to learn more"
     >
@@ -177,9 +177,12 @@ function BodyDiagram({
             <feMergeNode in="SourceGraphic" />
           </feMerge>
         </filter>
-        <filter id="silhouette-tint" colorInterpolationFilters="sRGB">
-          <feFlood floodColor="#DBC8BA" floodOpacity="1" result="tinted" />
-          <feComposite in="tinted" in2="SourceAlpha" operator="in" />
+        <filter id="silhouette-filter" colorInterpolationFilters="sRGB">
+          <feComponentTransfer>
+            <feFuncR type="linear" slope="1.08" intercept="0.02" />
+            <feFuncG type="linear" slope="1.02" intercept="0" />
+            <feFuncB type="linear" slope="0.95" intercept="0" />
+          </feComponentTransfer>
         </filter>
       </defs>
 
@@ -194,14 +197,14 @@ function BodyDiagram({
       />
 
       <image
-        href="/images/estrogen-silhouette.png"
+        href="/images/estrogen-silhouette-v2.png"
         x={DX}
         y={10}
         width={IMG_W}
         height={IMG_H}
         preserveAspectRatio="xMidYMid meet"
-        filter="url(#silhouette-tint)"
-        opacity="0.9"
+        filter="url(#silhouette-filter)"
+        opacity="0.95"
       />
 
       <ellipse
