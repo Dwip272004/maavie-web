@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import { BlogFab } from "@/components/BlogFab";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -29,6 +30,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-bone text-charcoal font-sans">
         {children}
+        <BlogFab />
       </body>
     </html>
   );
