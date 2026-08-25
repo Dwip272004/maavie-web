@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const experts = [
   {
-    name: "Dr. [Name]",
-    cred: "MD, Obstetrics & Gynaecology",
+    name: "Dr. Savita Tyagi",
+    cred: "MBBS, DGO, MD, FICOG, CIMP · Senior Consultant Obstetrician & Gynaecologist",
     tag: "Gynaecology",
     quote:
       "Every formula starts with one question: is this safe for a woman's hormones, at any stage of life?",
-    photo: null,
+    photo: "/images/dr-savita-tyagi.jpg",
   },
   {
     name: "Dr. Neha Taneja",
@@ -34,7 +34,7 @@ const experts = [
     tag: "Coaching",
     quote:
       "You don't have to navigate this alone. Understanding is the first step to feeling like yourself again.",
-    photo: "/images/gayathri-lewis.jpeg",
+    photo: null,
   },
 ];
 
