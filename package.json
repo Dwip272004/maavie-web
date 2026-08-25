@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "cpanel-start": "NODE_ENV=production node server.js",
     "lint": "eslint"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   },
   "dependencies": {
     "next": "16.2.10",
