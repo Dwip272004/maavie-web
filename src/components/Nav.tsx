@@ -20,8 +20,10 @@ export function Nav() {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-4 transition-[background,box-shadow] duration-300 ${
-        solid ? "bg-bone shadow-[0_2px_18px_rgba(0,0,0,0.07)]" : ""
+      className={`fixed inset-x-4 top-4 z-50 mx-auto flex max-w-[1080px] items-center justify-between rounded-full px-5 py-2.5 backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-300 sm:inset-x-6 sm:top-5 sm:px-6 ${
+        solid
+          ? "border border-black/[0.06] bg-bone/90 shadow-[0_10px_34px_rgba(89,5,21,0.12)]"
+          : "border border-bone/25 bg-black/15"
       }`}
     >
       <Link href="/" className="block">
@@ -31,7 +33,7 @@ export function Nav() {
           width={895}
           height={489}
           priority
-          className="h-11 w-auto transition-[filter] duration-300"
+          className="h-9 w-auto transition-[filter] duration-300"
           style={!solid ? { filter: "brightness(0) invert(1)" } : undefined}
         />
       </Link>
@@ -39,10 +41,10 @@ export function Nav() {
         href="https://www.instagram.com/maavie.in/"
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-block cursor-pointer rounded-full font-sans font-semibold transition-transform duration-150 px-6 py-[11px] text-sm hover:-translate-y-0 ${
+        className={`inline-block cursor-pointer rounded-full font-sans text-[13px] font-semibold transition-colors duration-150 px-5 py-2 ${
           solid
             ? "bg-deep-plum text-bone hover:bg-[#450110]"
-            : "border-[1.5px] border-bone/60 bg-transparent text-bone hover:bg-bone/15"
+            : "border border-bone/50 bg-transparent text-bone hover:bg-bone/15"
         }`}
       >
         Join the Waitlist
