@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 export function Hero() {
   return (
@@ -9,8 +8,8 @@ export function Hero() {
       style={{ minHeight: "88vh" }}
     >
       <Image
-        src="/images/main-banner.jpeg"
-        alt="Maavie — Bodies evolve. Your care should too."
+        src="/images/hero-banner.png"
+        alt="Maavie — Built for the biology of women."
         fill
         priority
         className="object-cover object-right"
@@ -37,17 +36,21 @@ export function Hero() {
             className="mb-5 font-display leading-tight text-bone"
             style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 500 }}
           >
-            Bodies change,
+            Built for the
             <br />
-            Care should too.
+            biology of women.
           </h1>
           <p className="mb-10 text-lg font-light text-bone/80">
             Science-backed hormonal care for every stage of womanhood.
           </p>
-          <WaitlistTrigger
-            label="Join the Waitlist"
-            className="bg-bone px-9 py-4 text-[11px] uppercase tracking-[0.18em] text-deep-plum hover:bg-terra-tint"
-          />
+          <a
+            href="https://www.instagram.com/maavie.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block cursor-pointer rounded-full bg-bone px-9 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-deep-plum transition-transform duration-150 hover:-translate-y-0.5 hover:bg-terra-tint"
+          >
+            Join the Community
+          </a>
         </div>
       </div>
     </section>

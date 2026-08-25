@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/components/blog/posts";
 
@@ -28,10 +29,15 @@ export function Learn() {
         <div className="grid grid-cols-1 gap-x-10 gap-y-12 border-t border-bone/15 pt-12 sm:grid-cols-3">
           {BLOG_POSTS.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
-              <div
-                className="mb-5 aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02]"
-                style={{ backgroundColor: post.tone }}
-              />
+              <div className="relative mb-5 aspect-[4/3] overflow-hidden">
+                <Image
+                  src={post.thumbnail}
+                  alt={post.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
               <span className="text-[11px] font-semibold uppercase tracking-[.14em] text-terracotta">
                 {post.category} · {post.readingTime}
               </span>

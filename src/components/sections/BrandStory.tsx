@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 export function BrandStory() {
   return (
@@ -17,25 +16,27 @@ export function BrandStory() {
               Why we built <em className="italic text-plum-accent">Maavie.</em>
             </h2>
             <div className="mb-5 text-sm font-semibold text-plum-accent">
-              Nupur &amp; Shivani · Founders
+              Nupur · Founder
             </div>
             <div className="mb-8 h-px w-10 bg-deep-plum" style={{ opacity: 0.35 }} />
             <p className="mb-5 text-base leading-relaxed text-[#4F4242]">
               Nupur watched her mother move through perimenopause in silence, then watched
               her sister, a doctor, face the same shift — but with answers, and saw how much
-              that changed. Shivani, a new mom, knew the other side: postpartum rage and
-              anxiety no one explained. Same story, different chapters — hormones shifting,
-              and no one there to help.
+              that changed. Hormones shifting, and no one there to help.
             </p>
             <p className="mb-12 text-base leading-relaxed text-[#4F4242]">
               So we built what our mothers never had and we needed ourselves: science
               explained plainly, care without judgement — so no woman feels like she&rsquo;s
               losing herself, alone.
             </p>
-            <WaitlistTrigger
-              label="Join the Waitlist"
-              className="bg-deep-plum px-9 py-4 text-[11px] uppercase tracking-[0.18em] text-white hover:bg-[#450110]"
-            />
+            <a
+              href="https://www.instagram.com/maavie.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block cursor-pointer rounded-full bg-deep-plum px-9 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-white transition-transform duration-150 hover:-translate-y-0.5 hover:bg-[#450110]"
+            >
+              Join the Community
+            </a>
           </div>
         </div>
 

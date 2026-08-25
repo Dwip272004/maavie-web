@@ -4,7 +4,7 @@ export type BlogPost = {
   category: string;
   metaDescription: string;
   readingTime: string;
-  tone: string;
+  thumbnail: string;
   bodyHtml: string;
 };
 
@@ -17,7 +17,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Estrogen, progesterone and testosterone all shift in perimenopause — here's what each does and why you feel it in your sleep, mood, skin, hair and body.",
     readingTime: "~5 min",
-    tone: "#8f5b48",
+    thumbnail: "/images/blog-hormones-thumb.png",
     bodyHtml: `
       <p>For most of your adult life, three hormones — estrogen, progesterone and testosterone — worked quietly in the background like a well-rehearsed orchestra. In your early-to-mid 40s (often earlier for Indian women, where the average age of menopause is around 46), that orchestra starts losing its conductor. This phase is called <strong>perimenopause</strong> — the years of hormonal change <em>before</em> your periods finally stop. It can last anywhere from a few years to a decade.</p>
       <p>Here's the part no one explains clearly: these hormones don't just control your periods. They have receptors — tiny "docking stations" — in your brain, bones, heart, skin, hair, gut and muscles. So when they shift, you don't feel it in one place. You feel it <em>everywhere</em>. Understanding what each hormone does makes the whole confusing stage suddenly make sense.</p>
@@ -63,7 +63,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "Drier, thinner, breakouts, dark patches after 40? Falling estrogen is a big driver. Here's what changes in your skin and the proven basics that actually help.",
     readingTime: "~5 min",
-    tone: "#6b2530",
+    thumbnail: "/images/blog-skin-thumb.jpg",
     bodyHtml: `
       <p>You did nothing differently — same routine, same products — and yet your skin seems to have aged years in a matter of months. Drier. Thinner. Less bounce. Maybe new breakouts along the jaw, or brown patches that won't budge. You're not imagining it, and it isn't simply "getting older." A big driver is <strong>falling estrogen</strong>, and once you understand what it was doing for your skin, the changes make complete sense.</p>
       <h2>Estrogen was your skin's silent support system</h2>
@@ -99,7 +99,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       "The tears, the rage, the anxiety from nowhere, the quiet grief — the emotional side of perimenopause has real biology behind it. Here's what's happening and what helps.",
     readingTime: "~5 min",
-    tone: "#5f6d5a",
+    thumbnail: "/images/blog-mood-thumb.jpg",
     bodyHtml: `
       <p>We're finally starting to talk about hot flushes and night sweats. But the part that catches women most off guard — and that almost no one prepares you for — is <strong>emotional</strong>. The sudden tears, the rage over something small, the anxiety that arrives from nowhere, the strange grief for a version of yourself you feel slipping away. If this is you, please hear this first: <strong>you are not losing your mind, and you are not "too much."</strong> There's real biology behind it.</p>
       <h2>Your mood runs partly on hormones</h2>

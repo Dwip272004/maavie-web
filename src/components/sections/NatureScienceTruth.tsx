@@ -1,4 +1,4 @@
-const phrase = ["Nature.", "Science.", "Truth."];
+const phrase = ["Science.", "Truth.", "Care."];
 const repeated = Array(12).fill(phrase).flat();
 
 export function NatureScienceTruth() {

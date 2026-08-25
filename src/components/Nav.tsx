@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 export function Nav() {
   const [solid, setSolid] = useState(false);
@@ -36,14 +35,18 @@ export function Nav() {
           style={!solid ? { filter: "brightness(0) invert(1)" } : undefined}
         />
       </Link>
-      <WaitlistTrigger
-        label="Join the Waitlist"
-        className={`px-6 py-[11px] text-sm hover:-translate-y-0 ${
+      <a
+        href="https://www.instagram.com/maavie.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`inline-block cursor-pointer rounded-full font-sans font-semibold transition-transform duration-150 px-6 py-[11px] text-sm hover:-translate-y-0 ${
           solid
             ? "bg-deep-plum text-bone hover:bg-[#450110]"
             : "border-[1.5px] border-bone/60 bg-transparent text-bone hover:bg-bone/15"
         }`}
-      />
+      >
+        Join the Community
+      </a>
     </nav>
   );
 }
