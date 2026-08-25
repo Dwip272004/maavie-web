@@ -49,7 +49,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-block cursor-pointer rounded-full bg-bone px-9 py-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-deep-plum transition-transform duration-150 hover:-translate-y-0.5 hover:bg-terra-tint"
           >
-            Join the Community
+            Join the Waitlist
           </a>
         </div>
       </div>
