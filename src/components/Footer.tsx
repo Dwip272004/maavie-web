@@ -49,7 +49,7 @@ export function Footer() {
               Our Story
             </Link>
             <Link href="#waitlist" className="mb-2 block text-sm hover:text-bone">
-              Join the Waitlist
+              Join the Community
             </Link>
             <Link href="/privacy" className="mb-2 block text-sm hover:text-bone">
               Privacy Policy

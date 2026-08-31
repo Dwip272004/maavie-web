@@ -15,7 +15,7 @@ export function Waitlist() {
           rel="noopener noreferrer"
           className="inline-block cursor-pointer rounded-full bg-bone px-10 py-[17px] font-sans text-base font-semibold text-deep-plum transition-transform duration-150 hover:-translate-y-0.5 hover:bg-white"
         >
-          Join the Waitlist
+          Join the Community
         </a>
       </div>
     </section>

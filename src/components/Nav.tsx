@@ -47,7 +47,7 @@ export function Nav() {
             : "border border-bone/50 bg-transparent text-bone hover:bg-bone/15"
         }`}
       >
-        Join the Waitlist
+        Join the Community
       </a>
     </nav>
   );
