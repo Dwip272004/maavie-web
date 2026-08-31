@@ -42,10 +42,10 @@ export function BrandStory() {
 
         <div className="relative aspect-[4/3] w-full overflow-hidden lg:aspect-auto lg:w-[48%]">
           <Image
-            src="/images/graphi.jpeg"
-            alt="Maavie — every stage of womanhood"
+            src="/images/nupur-kaudan.jpeg"
+            alt="Nupur Kaudan, Founder of Maavie"
             fill
-            className="object-cover object-center"
+            className="object-cover object-top"
             sizes="(max-width: 1024px) 100vw, 48vw"
           />
           <div className="absolute inset-y-0 left-0 hidden w-16 bg-gradient-to-r from-plum-tint to-transparent lg:block" />

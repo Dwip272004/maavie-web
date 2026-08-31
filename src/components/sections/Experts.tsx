@@ -11,6 +11,7 @@ const experts = [
     quote:
       "Every formula starts with one question: is this safe for a woman's hormones, at any stage of life?",
     photo: "/images/dr-savita-tyagi.jpg",
+    photoPosition: "center 25%",
   },
   {
     name: "Dr. Neha Taneja",
@@ -19,6 +20,7 @@ const experts = [
     quote:
       "Melanin-rich skin deserves its own science — not a one-size-fits-all approach borrowed from elsewhere.",
     photo: "/images/dr-neha-taneja.jpeg",
+    photoPosition: "center 20%",
   },
   {
     name: "Jyothi Machaiah",
@@ -27,6 +29,7 @@ const experts = [
     quote:
       "The right nutrients can genuinely support your body through every hormonal transition.",
     photo: "/images/jyothi-machaiah.png",
+    photoPosition: "center 15%",
   },
   {
     name: "Gayathri Lewis",
@@ -35,6 +38,7 @@ const experts = [
     quote:
       "You don't have to navigate this alone. Understanding is the first step to feeling like yourself again.",
     photo: null,
+    photoPosition: "center 20%",
   },
 ];
 
@@ -79,7 +83,7 @@ export function Experts() {
                 className="w-full cursor-pointer border-none bg-transparent p-0 text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-bone/60 focus-visible:ring-offset-2 focus-visible:ring-offset-deep-plum sm:text-left"
               >
                 <div
-                  className="relative mx-auto mb-5 h-[72px] w-[72px] overflow-hidden rounded-full border transition-all duration-300 sm:mx-0"
+                  className="relative mx-auto mb-5 h-[104px] w-[104px] overflow-hidden rounded-full border transition-all duration-300 sm:mx-0"
                   style={{
                     background: expert.photo
                       ? undefined
@@ -96,8 +100,9 @@ export function Experts() {
                       src={expert.photo}
                       alt={expert.name}
                       fill
-                      sizes="72px"
+                      sizes="104px"
                       className="object-cover"
+                      style={{ objectPosition: expert.photoPosition }}
                     />
                   )}
                 </div>

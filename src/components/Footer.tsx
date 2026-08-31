@@ -10,7 +10,7 @@ export function Footer() {
         borderTop: "1px solid rgba(198,120,92,0.25)",
       }}
     >
-      <div className="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-[30px] px-6">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-24 gap-y-[30px] px-6">
         <div>
           <Image
             src="/images/maavie-footer-logo.png"

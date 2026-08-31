@@ -1,12 +1,6 @@
 export function Waitlist() {
   return (
-    <section
-      id="waitlist"
-      className="pb-24 pt-20 text-center text-bone"
-      style={{
-        background: "linear-gradient(160deg,#9D6E6B,#590515)",
-      }}
-    >
+    <section id="waitlist" className="bg-deep-plum pb-24 pt-20 text-center text-bone">
       <div className="mx-auto max-w-[1200px] px-6">
         <h2 className="font-display text-[clamp(30px,3.8vw,48px)] font-semibold text-bone">
           Be part of the beginning

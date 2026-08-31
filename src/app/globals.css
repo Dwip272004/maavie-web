@@ -136,4 +136,16 @@ html {
   color: var(--color-charcoal);
   opacity: 0.55;
 }
+.blog-post figure {
+  margin: 2rem -6px;
+}
+.blog-post figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.blog-post figure.blog-lede {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
 
