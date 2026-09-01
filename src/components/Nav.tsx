@@ -28,12 +28,12 @@ export function Nav() {
     >
       <Link href="/" className="block">
         <Image
-          src="/images/logo.png"
-          alt="Maavie — Built for the biology of women"
+          src="/images/logo-icon-wordmark.png"
+          alt="Maavie"
           width={895}
-          height={489}
+          height={362}
           priority
-          className="h-9 w-auto transition-[filter] duration-300"
+          className="h-12 w-auto transition-[filter] duration-300"
           style={!solid ? { filter: "brightness(0) invert(1)" } : undefined}
         />
       </Link>
