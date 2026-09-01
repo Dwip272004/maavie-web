@@ -37,8 +37,8 @@ const experts = [
     tag: "Coaching",
     quote:
       "You don't have to navigate this alone. Understanding is the first step to feeling like yourself again.",
-    photo: null,
-    photoPosition: "center 20%",
+    photo: "/images/gayathri-lewis.jpeg",
+    photoPosition: "center 22%",
   },
 ];
 
@@ -49,7 +49,7 @@ export function Experts() {
     <section
       id="experts"
       className="pb-24 pt-20"
-      style={{ background: "linear-gradient(200deg, #590515 0%, #7a1530 100%)" }}
+      style={{ background: "linear-gradient(200deg, #590515 0%, #7a1530 50%, #590515 100%)" }}
     >
       <div className="mx-auto max-w-4xl px-6 text-center sm:px-10">
         <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-plum-tint/60">
@@ -83,7 +83,7 @@ export function Experts() {
                 className="w-full cursor-pointer border-none bg-transparent p-0 text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-bone/60 focus-visible:ring-offset-2 focus-visible:ring-offset-deep-plum sm:text-left"
               >
                 <div
-                  className="relative mx-auto mb-5 h-[104px] w-[104px] overflow-hidden rounded-full border transition-all duration-300 sm:mx-0"
+                  className="relative mx-auto mb-5 h-[136px] w-[136px] overflow-hidden rounded-full border transition-all duration-300 sm:mx-0"
                   style={{
                     background: expert.photo
                       ? undefined
@@ -92,7 +92,7 @@ export function Experts() {
                     boxShadow: isActive
                       ? "0 0 0 6px rgba(198,120,92,.16), 0 8px 20px rgba(0,0,0,.25)"
                       : "none",
-                    transform: isActive ? "scale(1.08)" : "scale(1)",
+                    transform: isActive ? "scale(1.06)" : "scale(1)",
                   }}
                 >
                   {expert.photo && (
@@ -100,7 +100,7 @@ export function Experts() {
                       src={expert.photo}
                       alt={expert.name}
                       fill
-                      sizes="104px"
+                      sizes="136px"
                       className="object-cover"
                       style={{ objectPosition: expert.photoPosition }}
                     />

@@ -8,14 +8,15 @@ import { BLOG_POSTS } from "@/components/blog/posts";
 function PostCard({ post }: { post: (typeof BLOG_POSTS)[number] }) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block">
-      <div className="relative mb-5 aspect-[4/3] overflow-hidden">
+      <div className="relative mb-5 aspect-[4/3] overflow-hidden rounded-lg shadow-[0_14px_40px_rgba(0,0,0,0.28)]">
         <Image
           src={post.thumbnail}
           alt={post.title}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
           sizes="(max-width: 640px) 84vw, (max-width: 1024px) 45vw, 33vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </div>
       <span className="text-[11px] font-semibold uppercase tracking-[.14em] text-terracotta">
         {post.category} · {post.readingTime}
@@ -51,17 +52,25 @@ export function Learn() {
       }}
     >
       <div className="mx-auto max-w-[1000px] px-6">
-        <div className="mb-16 max-w-[560px]">
-          <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">
-            Learn with Maavie
+        <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
+          <div className="max-w-[560px]">
+            <div className="mb-4 text-xs font-semibold uppercase tracking-[.2em] text-terracotta">
+              Learn with Maavie
+            </div>
+            <h2 className="font-display text-[clamp(28px,3.4vw,44px)] font-medium text-bone">
+              Understand your hormones
+            </h2>
+            <p className="mt-4 text-lg text-bone/55">
+              Clear, science-first reads — so you always know what&apos;s
+              happening and why.
+            </p>
           </div>
-          <h2 className="font-display text-[clamp(28px,3.4vw,44px)] font-medium text-bone">
-            Understand your hormones
-          </h2>
-          <p className="mt-4 text-lg text-bone/55">
-            Clear, science-first reads — so you always know what&apos;s
-            happening and why.
-          </p>
+          <Link
+            href="/blog"
+            className="shrink-0 border-b border-bone/40 pb-1 text-sm font-semibold text-bone transition-colors hover:border-terracotta hover:text-terracotta"
+          >
+            View all articles →
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 gap-x-10 gap-y-12 border-t border-bone/15 pt-12 sm:grid-cols-3">
@@ -98,7 +107,7 @@ export function Learn() {
 
             <div
               ref={trackRef}
-              className="-mx-6 flex snap-x snap-mandatory gap-8 overflow-x-auto px-6 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              className="-mx-6 flex snap-x snap-mandatory gap-8 overflow-x-auto px-6 pb-2 [scrollbar-width:none] [-webkit-mask-image:linear-gradient(90deg,transparent,black_24px,black_calc(100%-24px),transparent)] [mask-image:linear-gradient(90deg,transparent,black_24px,black_calc(100%-24px),transparent)] [&::-webkit-scrollbar]:hidden"
             >
               {more.map((post) => (
                 <div

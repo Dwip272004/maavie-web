@@ -414,8 +414,8 @@ export function EstrogenBodyDiagram() {
   const active = areas.find((a) => a.id === activeId)!;
 
   return (
-    <div className="main-layout" style={{ maxWidth: "1080px", margin: "0 auto" }}>
-      <div style={{ minHeight: "580px" }}>
+    <div className="main-layout" style={{ maxWidth: "1140px", margin: "0 auto" }}>
+      <div style={{ aspectRatio: "620 / 530" }}>
         <BodyDiagram activeId={activeId} onSelect={setActiveId} />
       </div>
 
